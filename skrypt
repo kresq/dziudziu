@@ -1,0 +1,118 @@
+wyłączenie "zezwalaj na wklejanie mozilla" w pasku adresu wpisz: about:config następnie wpisz devtools.selfxss.count i ustaw na 100;
+
+//************************************************************************//
+//* Tworzenie ogłoszenia || Tworzenie ogłoszenia || Tworzenie ogłoszenia *//
+//* Tworzenie ogłoszenia || Tworzenie ogłoszenia || Tworzenie ogłoszenia *//
+//* Tworzenie ogłoszenia || Tworzenie ogłoszenia || Tworzenie ogłoszenia *//
+//* Tworzenie ogłoszenia || Tworzenie ogłoszenia || Tworzenie ogłoszenia *//
+//************************************************************************//
+
+$('a#crExcl')[0].click();
+
+setTimeout(function() {
+    $('a#showAnchor_EU')[0].click();
+
+    setTimeout(function() {
+        /// Kody krajów do zaznaczenie! 'kod kraju', || Ostatni element nie ma przecinka (,) 
+        var kraje = ['AND','ALB', 'BLR','BIH','CYP','GIB','GGY','JEY','LIE','VAT','GBR','UKR','CHE','SJM','SRB','SMR','RUS','NOR','MKD','MLT','MDA', 'MCO','MNE'];
+
+
+    $.each( kraje, function( key, value ) {
+        $("#country_" + kraje[key] ).prop("checked", true); 
+    });
+    $('#but_editolp_saveCloseBtn')[0].click();
+    
+    }, 1000);  
+
+    console.log("gotowe! ");
+}, 6000); // Edytuj tą wartość jak strona nie da rady się załadować przez zapisaniem danych
+
+
+
+//***************************************************************************//
+//* Edytowanie ogłoszenia || Edytowanie ogłoszenia || Edytowanie ogłoszenia *//
+//* Edytowanie ogłoszenia || Edytowanie ogłoszenia || Edytowanie ogłoszenia *//
+//* Edytowanie ogłoszenia || Edytowanie ogłoszenia || Edytowanie ogłoszenia *//
+//* Edytowanie ogłoszenia || Edytowanie ogłoszenia || Edytowanie ogłoszenia *//
+//***************************************************************************//
+$('a#editExcl')[0].click();
+
+setTimeout(function() {
+    $('a#showAnchor_EU')[0].click();
+
+    setTimeout(function() {
+        /// Kody krajów do zaznaczenie! 'kod kraju', || Ostatni element nie ma przecinka (,) 
+        var kraje = ['AND','ALB', 'BLR','BIH','CYP','GIB','GGY','JEY','LIE','VAT','GBR','UKR','CHE','SJM','SRB','SMR','RUS','NOR','MKD','MLT','MDA', 'MCO','MNE'];
+
+
+    $.each( kraje, function( key, value ) {
+        $("#country_" + kraje[key] ).prop("checked", true); 
+    });
+    $('#but_editolp_saveCloseBtn')[0].click();
+    
+    }, 1000);  
+    console.log("gotowe! ");
+}, 6000);// Edytuj tą wartość jak strona nie da rady się załadować przez zapisaniem danych
+
+
+
+    
+//*******************************************************************************//
+//* LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW *//
+//* LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW *//
+//* LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW *//
+//* LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW *//
+//* LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW *//
+//* LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW ||  LISTA KODÓW *//
+//*******************************************************************************//
+ALB             Albanien
+AND             Andorra
+AUT             Österreich
+BLR             Belarus (Weißrussland)
+BEL             Belgien
+BIH             Bosnien und Herzegowina
+BGR             Bulgarien
+HRV             Kroatien
+CYP             Zypern
+CZE             Tschechische Republik
+DNK             Dänemark
+EST             Estland
+FIN             Finnland
+FRA             Frankreich
+GIB             Gibraltar
+GRC             Griechenland
+GGY             Guernsey
+HUN             Ungarn
+ISL             Island
+IRL             Irland
+ITA             Italien
+JEY             Jersey
+LVA             Lettland
+LIE             Liechtenstein
+LTU             Litauen
+LUX             Luxemburg
+MKD             Mazedonien
+MLT             Malta
+MDA             Moldawien
+MCO             Monaco
+MNE             Montenegro
+NLD             Niederlande
+NOR             Norwegen
+POL             Polen
+PRT             Portugal
+ROU             Rumänien
+RUS             Russische Föderation
+SMR             San Marino
+SRB             Serbien
+SVK             Slowakei
+SVN             Slowenien
+ESP             Spanien
+SJM             Svalbard und Jan Mayen
+SWE             Schweden
+CHE             Schweiz
+UKR             Ukraine
+GBR             Großbritannien
+VAT             Vatikan
+
+
+
