@@ -1,11 +1,11 @@
-setInterval(function(){loop()}, 100);
+setInterval(function(){loop()}, 500);
 
 function loop(){
     
 $('input').val(function(_, text) {
-    return text.replace(/[\[].*?[)\]] /g, '');
-   
+    return text.replace(/[\[].*?[)\]] |[\[].*?[)\]]/g, '');
+    
 });
-
 $(".btn-toolbar.flex-fill.flex-nowrap.justify-content-end.order-2 > button.btn.btn-primary")[0].click();
+
 }
