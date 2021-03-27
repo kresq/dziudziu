@@ -1,11 +1,16 @@
 setInterval(function(){loop()}, 500);
 
 function loop(){
-    
-$('input').val(function(_, text) {
-    return text.replace(/[\[].*?[)\]] |[\[].*?[)\]]/g, '');
-    
-});
-$(".btn-toolbar.flex-fill.flex-nowrap.justify-content-end.order-2 > button.btn.btn-primary")[0].click();
+    //$('ul.actions-main-dialogbox>li:nth-child(1)>a>span:nth-child(2)')[0].click();
+
+    if($('ul.actions-main-dialogbox>li:nth-child(1)>a>span:nth-child(2)').length){
+        $('ul.actions-main-dialogbox>li:nth-child(1)>a>span:nth-child(2)')[0].click();
+    }
+
+    $('input#GoodName').val(function(_, text) {
+        return text.replace(/[\[].*?[)\]] |[\[].*?[)\]]/g, '');
+        
+    });
+    $("div.justify-content-end>button:nth-child(2)")[0].click();
 
 }
